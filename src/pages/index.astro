@@ -1,0 +1,29 @@
+---
+import BaseHead from "../components/BaseHead.astro"
+import Footer from "../components/Footer.astro"
+import Header from "../components/Header.astro"
+import { SITE_DESCRIPTION, SITE_TITLE } from "../consts"
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <h1>🧑‍🚀 Hello, Astronaut!</h1>
+      <p>
+        Welcome to the official <a href="https://astro.build/">Astro</a> blog starter
+        template. This template serves as a lightweight, minimally-styled starting
+        point for anyone looking to build a personal website, blog, or portfolio
+        with Astro.
+      </p>
+      <p>
+        ゴールデンウィーク、新宿御苑にピクニックに行った。その帰りに外苑前のスタバでAstroを触った。Amplifyにデプロイしてみる。
+      </p>
+    </main>
+    <Footer />
+  </body>
+</html>

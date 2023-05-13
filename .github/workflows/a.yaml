@@ -1,0 +1,13 @@
+name: サンプルアクション
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Hello World!!!"
+      - run: echo "Let's Go!!'"
